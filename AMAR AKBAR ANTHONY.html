@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let arr=[];
+    function bestFriends(name,skill,place){
+        this.name=name;
+        this.skill=skill;
+        this.place=place;
+    }
+    var friend_1= new bestFriends ("Amar","Singer","Goa");
+    var friend_2= new bestFriends ("Akbar","Chef","Mumbai");
+    var friend_3= new bestFriends ("Anthony ","Magician","Kashmir");
+    arr.push(friend_1,friend_2,friend_3);
+    
+    function shareSkill(){
+        console.log(this.skill);
+    }
+    shareSkill.call(friend_2)
+</script>
